@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+<body>
+  <div id="date"></div>
+  <div id="clock"></div>
+  <div id="btns">
+    <button onclick="light()">Light</button>
+    <button onclick="dark()">Dark</button>
+  </div>
+  <div id="btns2">
+    <button onclick="day()">Day</button>
+    <button onclick="eavning()">Evening</button>
+  </div>
+  <div class="calendar">
+    <div class="header">
+        <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+        <div class="text" data-render="month-year"></div>
+        <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+    </div>
+    <div class="months" data-flow="left">
+        <div class="month month-a">
+            <div class="render render-a"></div>
+        </div>
+        <div class="month month-b">
+            <div class="render render-b"></div>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
